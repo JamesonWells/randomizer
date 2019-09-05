@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
+  
 <p>Randomize your life!</p>
+  
+<button onclick="randomizer()">Randomize!</button>
+  
 <p id="appear"></p>
+  
 <script>
 function randomizer() {
   let numberOfOptions = prompt("Number of options?");
   document.getElementById("appear").innerHTML = (Math.floor(Math.random() * (numberOfOptions) + 1);
 };
 </script>
+  
 </body>
 </html>
