@@ -10,11 +10,9 @@
   
 <script>
 function randomizer() {
-  var numberOfOptions = prompt("Number of options?");
-  if (numberOfOptions != null) {
-    document.getElementById("appear").innerHTML = 
-    (Math.floor((Math.random() * numberOfOptions) + 1).toString();
-  }
+ var numberOfOptions = prompt("Number of options?");
+ var newValue = Math.floor((Math.random() * numberOfOptions)+1);
+ document.getElementById("appear").innerHTML = newValue;
 }
 </script>
   
